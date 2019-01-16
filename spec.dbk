@@ -11624,7 +11624,7 @@ Invalid: [ True, Null, 0o7, 0x3A, +12.3 ]
 <programlisting>A null: null<sbr/>
 Also a null: # Empty
 Not a null: ""
-Booleans: [ true, True, false, FALSE ]
+Booleans: [ true, false ]
 Integers: [ 0, 0o7, 0x3A, -19 ]
 Floats: [ 0., -0.0, .5, +12e03, -2E+05 ]
 Also floats: [ .inf, -.Inf, +.INF, .NAN ]
@@ -11638,8 +11638,7 @@ Also floats: [ .inf, -.Inf, +.INF, .NAN ]
   !!str "Also a null" : !!null "",
   !!str "Not a null" : !!str "",
   !!str "Booleans: !!seq [
-    !!bool "true", !!bool "True",
-    !!bool "false", !!bool "FALSE",
+    !!bool "true", !!bool "false"
   ],
   !!str "Integers": !!seq [
     !!int "0", !!int "0o7",

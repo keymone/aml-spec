@@ -111,7 +111,7 @@
 
         <listitem>
           <para>
-            <userinput>y|n</userinput>
+            <userinput>true|false</userinput>
           </para>
         </listitem>
       </varlistentry>
@@ -119,11 +119,7 @@
       <varlistentry>
         <term>Regexp:</term>
         <listitem>
-<screen>
- y|Y|yes|Yes|YES|n|N|no|No|NO
-|true|True|TRUE|false|False|FALSE
-|on|On|ON|off|Off|OFF
-</screen>
+          <screen>true|false</screen>
         </listitem>
       </varlistentry>
 
@@ -136,15 +132,8 @@
 
           <para>
             A Boolean represents a true/false value. Booleans are formatted as
-            English words
-            (<quote><userinput>true</userinput></quote>/<quote><userinput>false</userinput></quote>,
-            <quote><userinput>yes</userinput></quote>/<quote><userinput>no</userinput></quote>
-            or
-            <quote><userinput>on</userinput></quote>/<quote><userinput>off</userinput></quote>)
-            for readability and may be abbreviated as a single character
-            <quote><userinput>y</userinput></quote>/<quote><userinput>n</userinput></quote>
-            or
-            <quote><userinput>Y</userinput></quote>/<quote><userinput>N</userinput></quote>.
+            English words (<quote><userinput>true</userinput></quote> /
+            <quote><userinput>false</userinput></quote>).
           </para>
         </listitem>
       </varlistentry>
@@ -153,10 +142,7 @@
     <example>
       <title><userinput>!!bool</userinput> Examples</title>
 <programlisting>
-canonical: y
-answer: NO
-logical: True
-option: on
+canonical: true
 </programlisting>
     </example>
   </section>
